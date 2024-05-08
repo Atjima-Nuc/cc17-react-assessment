@@ -1,3 +1,12 @@
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
 # React Assessment : My Todo / Movie List (CC17)
 
 ### Overview
@@ -45,19 +54,18 @@ Please follow these conditions before code!
 
 #### https://documenter.getpostman.com/view/11730979/2sA3JJA3uG
 
-```js
+js
 // You can use this function for getMe
 async function getMe() {
-  let token; // get token from somewhere
-  const res = await fetch('base_url/auth/me', {
-    headers: {
-      Authorization: `Bearer ${token}`, // put your token here
-    },
-  });
-  const data = await res.json();
-  console.log(data);
+let token; // get token from somewhere
+const res = await fetch('base_url/auth/me', {
+headers: {
+Authorization: `Bearer ${token}`, // put your token here
+},
+});
+const data = await res.json();
+console.log(data);
 }
-```
 
 # Example UI For Todo List
 
